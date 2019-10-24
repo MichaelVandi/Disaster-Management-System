@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FLOOD_RECOVERY_SYSTEMDataSet1" targetNamespace="http://tempuri.org/FLOOD_RECOVERY_SYSTEMDataSet1.xsd" xmlns:mstns="http://tempuri.org/FLOOD_RECOVERY_SYSTEMDataSet1.xsd" xmlns="http://tempuri.org/FLOOD_RECOVERY_SYSTEMDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FLOOD_RECOVERY_SYSTEMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FLOOD_RECOVERY_SYSTEMConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsApp1.My.MySettings.GlobalReference.Default.FLOOD_RECOVERY_SYSTEMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_Asset_VictimTableAdapter" GeneratorDataComponentClassName="V_Asset_VictimTableAdapter" Name="V_Asset_Victim" UserDataComponentName="V_Asset_VictimTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FLOOD_RECOVERY_SYSTEMConnectionString (MySettings)" DbObjectName="FLOOD_RECOVERY_SYSTEM.dbo.V_Asset_Victim" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT asset_Id, Owner_Id FROM dbo.V_Asset_Victim</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_Id" DataSetColumn="asset_Id" />
+              <Mapping SourceColumn="Owner_Id" DataSetColumn="Owner_Id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FLOOD_RECOVERY_SYSTEMDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FLOOD_RECOVERY_SYSTEMDataSet1" msprop:Generator_UserDSName="FLOOD_RECOVERY_SYSTEMDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_Asset_Victim" msprop:Generator_TableClassName="V_Asset_VictimDataTable" msprop:Generator_TableVarName="tableV_Asset_Victim" msprop:Generator_TablePropName="V_Asset_Victim" msprop:Generator_RowDeletingName="V_Asset_VictimRowDeleting" msprop:Generator_RowChangingName="V_Asset_VictimRowChanging" msprop:Generator_RowEvHandlerName="V_Asset_VictimRowChangeEventHandler" msprop:Generator_RowDeletedName="V_Asset_VictimRowDeleted" msprop:Generator_UserTableName="V_Asset_Victim" msprop:Generator_RowChangedName="V_Asset_VictimRowChanged" msprop:Generator_RowEvArgName="V_Asset_VictimRowChangeEvent" msprop:Generator_RowClassName="V_Asset_VictimRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnasset_Id" msprop:Generator_ColumnPropNameInRow="asset_Id" msprop:Generator_ColumnPropNameInTable="asset_IdColumn" msprop:Generator_UserColumnName="asset_Id" type="xs:int" />
+              <xs:element name="Owner_Id" msprop:Generator_ColumnVarNameInTable="columnOwner_Id" msprop:Generator_ColumnPropNameInRow="Owner_Id" msprop:Generator_ColumnPropNameInTable="Owner_IdColumn" msprop:Generator_UserColumnName="Owner_Id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_Asset_Victim" />
+      <xs:field xpath="mstns:asset_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

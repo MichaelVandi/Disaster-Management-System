@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{584C8DD6-AB82-4D30-8521-362792E83F69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\APPLICATIONS\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asset_manager.Designer.vb">
+      <DependentUpon>asset_manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="asset_manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLOOD_RECOVERY_SYSTEMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FLOOD_RECOVERY_SYSTEMDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FLOOD_RECOVERY_SYSTEMDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.Designer.vb">
+      <DependentUpon>main_form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_area.Designer.vb">
+      <DependentUpon>manager_area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manager_area.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_form.Designer.vb">
+      <DependentUpon>Manager_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_panel.Designer.vb">
+      <DependentUpon>manager_panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manager_panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_victim.Designer.vb">
+      <DependentUpon>manager_victim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manager_victim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="report.Designer.vb">
+      <DependentUpon>report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="asset_manager.resx">
+      <DependentUpon>asset_manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_form.resx">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_area.resx">
+      <DependentUpon>manager_area.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_form.resx">
+      <DependentUpon>Manager_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_panel.resx">
+      <DependentUpon>manager_panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_victim.resx">
+      <DependentUpon>manager_victim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet.xsc">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLOOD_RECOVERY_SYSTEMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet.xss">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet1.xsc">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLOOD_RECOVERY_SYSTEMDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet1.xss">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet2.xsc">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLOOD_RECOVERY_SYSTEMDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLOOD_RECOVERY_SYSTEMDataSet2.xss">
+      <DependentUpon>FLOOD_RECOVERY_SYSTEMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\DataSources\manager_victim.datasource" />
+    <None Include="My Project\DataSources\WindowsApp1.FLOOD_RECOVERY_SYSTEMDataSetTableAdapters.VICTIMTableAdapter.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\empty Frame 1 UI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty Frame 4 UI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager_login.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final login scren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final login nscreen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2downarrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty Frame 4 UI - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flood-Free-PNG-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Template finally main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flooding system flash banner22222.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60510.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty Frame 3 UI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slid show.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
