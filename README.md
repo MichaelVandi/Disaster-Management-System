@@ -1,2 +1,2 @@
 # Disaster-Management-System
-Windows App for collecting data on post-disaster recovery processes
+Windows App for collecting data during post-disaster recovery processes
